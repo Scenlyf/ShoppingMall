@@ -1,0 +1,214 @@
+.nav .dropdown .dd {
+    display: block;
+}
+
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+.main .focus {
+    float: left;
+    width: 721px;
+    height: 455px;
+}
+
+.main .newsflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+
+.main .newsflash .news {
+    width: 250px;
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+
+.main .newsflash .news .news-hd {
+    height: 32px;
+    border-bottom: 1px dotted #e4e4e4;
+    line-height: 32px;
+    margin: 0 15px;
+}
+
+.main .newsflash .news .news-hd h5 {
+    float: left;
+    font-size: 14px;
+}
+
+.main .newsflash .news .news-hd .more {
+    float: right;
+}
+
+.main .newsflash .news .news-hd .more::after {
+    font-family: 'icomoon';
+    content: '\e920';
+}
+
+.main .newsflash .news .news-bd {
+    margin: 5px 15px 0;
+}
+
+.main .newsflash .news .news-bd ul li {
+    height: 24px;
+    line-height: 24px;
+    /* 超出部分省略号代替 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main .newsflash .lifeservice {
+    height: 210px;
+    width: 250px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+    overflow: hidden;
+}
+
+/* 由于li出现溢出元素下移 父级盒子放大；overflow: hidden;隐藏多余的*/
+.main .newsflash .lifeservice ul {
+    width: 252px;
+}
+
+.main .newsflash .lifeservice ul li {
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+}
+
+.main .newsflash .lifeservice ul li i {
+    display: block;
+    width: 24px;
+    height: 30px;
+    margin-top: 12px;
+    margin-left: 21px;
+    background: url(../images/icons.png) no-repeat -17px -13px;
+}
+
+.main .newsflash .bargain {
+    margin-top: 5px;
+}
+
+.recom {
+    height: 163px;
+    background-color: #ebebeb;
+    margin-top: 10px;
+}
+
+.recom .recom_hd {
+    float: left;
+    width: 205px;
+    height: 163px;
+    background-color: #5c5251;
+    line-height: 163px;
+    text-align: center;
+}
+
+.recom .recom_bd {
+    float: left;
+}
+
+.recom .recom_bd ul li {
+    position: relative;
+    float: left;
+}
+
+/* 防止图片过大溢出 设置宽高 */
+.recom .recom_bd ul li img {
+    width: 247px;
+    height: 163px;
+}
+
+/* 小竖线在图片上 需要用定位设置 */
+.recom .recom_bd ul li:nth-child(-n+3)::after {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 10px;
+    /* 小竖线巧妙通过伪元素 和 width:1px 设置 */
+    background-color: #ddd;
+    width: 1px;
+    height: 143px;
+}
+
+/* 上边距25 行高30 tab-list的行高也设30 居中 */
+.floor .bigbox .box_hd {
+    margin-top: 25px;
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.floor .bigbox .box_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+
+.floor .bigbox .box_hd .tab_list {
+    float: right;
+    line-height: 30px;
+}
+
+.floor .bigbox .box_hd .tab_list ul li {
+    float: left;
+}
+
+.floor .bigbox .box_hd .tab_list ul li a {
+    margin: 0 15px;
+}
+
+.floor .bigbox .box_bd {
+    height: 361px;
+}
+
+.floor .bigbox .box_bd .col_210 {
+    width: 210px;
+    background-color: #f9f9f9;
+}
+
+.floor .bigbox .box_bd .col_210 ul {
+    margin-left: 12px;
+}
+
+.floor .bigbox .box_bd .col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 34px;
+    margin-right: 10px;
+}
+
+/* .box_bd中所以div元素都设置左浮动 */
+.floor .bigbox .box_bd>div {
+    float: left;
+}
+
+.floor .bigbox .box_bd .col_329 {
+    width: 329px;
+}
+
+.floor .bigbox .box_bd .col_219 {
+    width: 219px;
+    border-right: 1px solid #ccc;
+}
+
+/* 图片是219*180的 要设置边框 所以图片大小要-1  */
+.floor .bigbox .box_bd .col_219 img {
+    width: calc(100% - 1px);
+}
+
+/* a设置边框：一般情况下，a如果包含有宽度的盒子，a需要转为块级元素 */
+.floor .bigbox .box_bd .bb {
+    display: block;
+    border-bottom: 1px solid #ccc;
+}

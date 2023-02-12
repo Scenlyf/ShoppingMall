@@ -1,0 +1,134 @@
+/* 注册页专有css文件 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.register_header {
+    height: 82px;
+    border-bottom: 2px solid #c81523;
+    padding-top: 15px;
+}
+
+.register_area {
+    margin-top: 20px;
+    height: 524px;
+    border: 1px solid #ccc;
+}
+
+.register_area .register_nav {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+    background-color: #ececec;
+    padding: 0 10px;
+}
+
+.register_area .register_nav h4 {
+    float: left;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.register_area .register_nav p {
+    float: right;
+    font-size: 14px;
+}
+
+.register_area .register_nav p a {
+    color: #c81523;
+}
+
+.register_form {
+    width: 548px;
+    height: 368px;
+    margin-top: 51px;
+    margin-left: 311px;
+}
+
+.register_form ul li {
+    margin-bottom: 18px;
+}
+
+/* label是行内元素 要转为行内块元素 设宽右对齐*/
+.register_form ul li label {
+    display: inline-block;
+    text-align: right;
+    width: 89px;
+}
+
+.register_form ul li .inp {
+    width: 238px;
+    height: 34px;
+    border: 1px solid #ccc;
+}
+
+.register_form ul li .error {
+    color: #c81523;
+}
+
+.register_form ul li .success {
+    color: green;
+}
+
+.register_form .safe {
+    padding-left: 160px;
+}
+
+.register_form .safe .ruo {
+    padding: 0 12px;
+    margin-right: 1px;
+    color: #fff;
+    background-color: #de1111;
+}
+
+.register_form .safe .zhong {
+    padding: 0 12px;
+    margin-right: 1px;
+    color: #fff;
+    background-color: #40b83f;
+}
+
+.register_form .safe .qiang {
+    padding: 0 12px;
+    color: #fff;
+    background-color: #f79100;
+}
+
+.register_form .agree {
+    margin-top: 39px;
+}
+
+.register_form .agree input {
+    margin-left: 87px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.register_form .agree a {
+    color: #1ba1e6;
+}
+
+.register_form .btn input {
+    width: 199px;
+    height: 34px;
+    margin-left: 94px;
+    margin-top: 39px;
+    background-color: #c81623;
+    border: 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+.register_footer .mod_copyright {
+    padding-top: 17px;
+    text-align: center;
+}
+
+.register_footer .mod_copyright .links {
+    margin-bottom: 11px;
+}
+
+.register_footer .mod_copyright .links i {
+    margin: 0 12px;
+}
